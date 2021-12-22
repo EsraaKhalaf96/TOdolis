@@ -5,9 +5,81 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(-30deg, #e6f0fc, #bde5d1);
+  height: 100vh;
 }
+*{
 
+  box-sizing: border-box;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+::placeholder{
+  color: #b9b2b2;
+}
+.text-center{
+ text-align: center;
+}
+.container{
+  width: 60%;
+  margin: 10% auto;
+}
+.ListItems{
+    -moz-box-shadow: 0 4px 16px #aaa;
+    -webkit-box-shadow: 0 4px 16px #aaa;
+    box-shadow: 0 4px 16px #aaa;
+    border-top: solid 8px teal;
+}
+.ListItems p{
+  margin: 0;
+  text-align: center;
+  padding: 10px 0;
+}
+.ListItems span{
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  border: 0.3px solid #ccc;
+}
+.ListItems span.title{
+  background-color: teal;
+  color: #fff;
+}
+.ListItems span.name,
+ form input [type="text"]{
+  width: 60%;
+}
+.ListItems span.age,
+form input [type="number"]{
+  width: 30%;
+}
+.ListItems span.action,
+form input [type="submit"]{
+  width: 10%;
+}
+.ListItems span.icon{
+  color: #000;
+  cursor: pointer;
+}
+form input{
+  padding: 10px;
+  background-color: #fff;
+  border: transparent;
+  border: 0.3px solid #ccc;
+}
+form input[type="submit"]{
+  cursor: pointer;
+  color: #fff;
+  border: 0.3px solid #ccc;
+  background-color: teal;
+  width: 10%;
+}
+form input[type="number"]{
+  width: 30%;
+}
+form input[type="text"]{
+  width: 60%;
 }
